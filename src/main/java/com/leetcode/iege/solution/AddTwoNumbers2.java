@@ -33,6 +33,6 @@ public class AddTwoNumbers2 {
         listNode5.next = listNode6;
         listNode6.next = listNode44;
 
-        System.out.println(new AddTwoNumbers2().addTwoNumbers(listNode2, listNode5));
+        System.out.println(listNode2);
     }
 }
