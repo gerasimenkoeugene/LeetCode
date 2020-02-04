@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.topinterview;
+package com.leetcode.iege.solution.topinterview.linkedlist;
 
 import datastructure.ListNode;
 
