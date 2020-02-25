@@ -2,8 +2,12 @@ package com.leetcode.iege.solution.topinterview.linkedlist;
 
 import datastructure.ListNode;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class IsLinkedListPalindrome {
 
@@ -45,10 +49,11 @@ public class IsLinkedListPalindrome {
         return true;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {-129, -129};
-        IsLinkedListPalindrome isLinkedListPalindrome = new IsLinkedListPalindrome();
-        ListNode head = new IsLinkedListPalindrome().createListOfListNodes(arr);
-        System.out.println(isLinkedListPalindrome.isPalindrome(head));
+    public static void main(String[] args) throws Exception {
+        final Process p = Runtime.getRuntime().exec("ping -c 3 google.com");
+
+        BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        List<String> lines = input.lines().collect(Collectors.toList());
+        System.out.println(lines.stream().skip(lines.size() - 2).collect(Collectors.joining(", ")));
     }
 }
