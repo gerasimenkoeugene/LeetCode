@@ -1,6 +1,4 @@
-package com.leetcode.iege.solution.topinterview;
-
-import java.math.BigInteger;
+package com.leetcode.iege.solution.topinterview.easy.string;
 
 /**
  * Given a 32-bit signed integer, reverse digits of an integer.

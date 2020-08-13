@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.topinterview;
+package com.leetcode.iege.solution.topinterview.easy.string;
 
 import java.util.HashSet;
 import java.util.LinkedHashMap;

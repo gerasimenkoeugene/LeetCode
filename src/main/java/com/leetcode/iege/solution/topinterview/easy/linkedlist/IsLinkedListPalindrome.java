@@ -1,13 +1,11 @@
-package com.leetcode.iege.solution.topinterview.linkedlist;
+package com.leetcode.iege.solution.topinterview.easy.linkedlist;
 
 import datastructure.ListNode;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class IsLinkedListPalindrome {
 

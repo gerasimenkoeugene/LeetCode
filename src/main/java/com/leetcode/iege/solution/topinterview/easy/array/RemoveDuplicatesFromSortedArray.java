@@ -1,9 +1,6 @@
-package com.leetcode.iege.solution.topinterview;
+package com.leetcode.iege.solution.topinterview.easy.array;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.

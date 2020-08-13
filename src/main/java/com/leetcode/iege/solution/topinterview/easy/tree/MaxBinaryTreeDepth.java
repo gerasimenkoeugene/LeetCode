@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.topinterview.tree;
+package com.leetcode.iege.solution.topinterview.easy.tree;
 
 import datastructure.TreeNode;
 

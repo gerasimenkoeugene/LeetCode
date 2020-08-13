@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.topinterview.math;
+package com.leetcode.iege.solution.topinterview.easy.math;
 
 /**
  * Given an integer, write a function to determine if it is a power of three.

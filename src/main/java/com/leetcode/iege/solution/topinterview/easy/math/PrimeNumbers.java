@@ -1,7 +1,6 @@
-package com.leetcode.iege.solution.topinterview.math;
+package com.leetcode.iege.solution.topinterview.easy.math;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 

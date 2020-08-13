@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.topinterview.math;
+package com.leetcode.iege.solution.topinterview.easy.math;
 
 import java.util.HashMap;
 import java.util.Map;
