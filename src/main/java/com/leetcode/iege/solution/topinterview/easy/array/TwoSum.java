@@ -1,7 +1,5 @@
 package com.leetcode.iege.solution.topinterview.easy.array;
 
-import com.sun.source.tree.BreakTree;
-
 import java.util.HashMap;
 import java.util.Map;
 
