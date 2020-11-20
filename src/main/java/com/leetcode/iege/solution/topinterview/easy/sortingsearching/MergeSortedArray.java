@@ -2,18 +2,24 @@ package com.leetcode.iege.solution.topinterview.easy.sortingsearching;
 
 public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int p1=m-1, p2=n-1;
-        int curr=nums1.length-1;
-        while(p2>=0 && curr>=0) {
-
-            if(p1<0 || nums2[p2] >= nums1[p1]) {
-                nums1[curr] = nums2[p2];
-                p2--;
-            } else {
-                nums1[curr] = nums1[p1];
-                p1--;
+        int i = m-1, j = n-1, index = m + n - 1;
+        while(i >=0 && j >=0){
+            if(nums1[i] > nums2[j]){
+                nums1[index] = nums1[i];
+                i--;
+            }else{
+                nums1[index] = nums2[j];
+                j--;
             }
-            curr--;
+
+            index --;
+        }
+
+        while(i >= 0){
+            nums1[index--] = nums1[i--];
+        }
+        while(j >= 0){
+            nums1[index--] = nums2[j--];
         }
     }
 }
