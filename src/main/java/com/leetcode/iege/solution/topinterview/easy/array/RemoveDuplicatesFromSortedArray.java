@@ -8,39 +8,47 @@ import java.util.Arrays;
  */
 public class RemoveDuplicatesFromSortedArray {
 
-//    public int removeDuplicates(int[] nums) {
-//        Set<Integer> unique = new HashSet<>();
-//        for (int i = 0, j = 0; i < nums.length;) {
-//            if (unique.contains(nums[i])) {
-//                i++;
-//                continue;
-//            }  else {
-//                nums[j] = nums[i];
-//                unique.add(nums[i]);
-//                i++;
-//                j++;
-//            }
-//        }
-//        return unique.size();
-//    }
-
     public int removeDuplicates(int[] nums) {
-        return calculatePosition(nums, 0, nums.length - 1, 0);
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        if (nums.length == 1) {
+            return 1;
+        }
+
+        int duplicates = 0;
+        int prev = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            nums[i - duplicates] = nums[i];
+            if (prev == nums[i]) {
+                duplicates++;
+            }
+            prev = nums[i];
+        }
+
+        return nums.length - duplicates;
     }
 
-    private int calculatePosition(int[] nums, int left, int right, int position) {
-        if (nums[left] == nums[right]) {
-            if (position - 1 >= 0 && nums[position - 1] == nums[left]) {
-                return position;
-            }
-            nums[position] = nums[left];
-            return ++position;
-        } else {
-            int middle = left + (right - left) / 2;
-            int newPosition = calculatePosition(nums, left, middle, position);
-            return calculatePosition(nums, middle + 1, right, newPosition);
-        }
-    }
+
+// OLD LOGIC
+//    public int removeDuplicates(int[] nums) {
+//        return calculatePosition(nums, 0, nums.length - 1, 0);
+//    }
+//
+//    private int calculatePosition(int[] nums, int left, int right, int position) {
+//        if (nums[left] == nums[right]) {
+//            if (position - 1 >= 0 && nums[position - 1] == nums[left]) {
+//                return position;
+//            }
+//            nums[position] = nums[left];
+//            return ++position;
+//        } else {
+//            int middle = left + (right - left) / 2;
+//            int newPosition = calculatePosition(nums, left, middle, position);
+//            return calculatePosition(nums, middle + 1, right, newPosition);
+//        }
+//    }
 
     public static void main(String[] args) {
         int nums[] = {0,0,1,1,1,2,2,3,3,4};
