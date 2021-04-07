@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.array;
+package com.leetcode.iege.solution.array.easy;
 
 /*
 Given an integer array nums sorted in non-decreasing order,

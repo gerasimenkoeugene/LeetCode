@@ -1,4 +1,4 @@
-package com.leetcode.iege.solution.array;
+package com.leetcode.iege.solution.array.easy;
 
 import java.util.HashSet;
 import java.util.Set;
